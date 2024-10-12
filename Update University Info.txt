@@ -1,0 +1,69 @@
+Use Case: Update Universities Information 
+ 
+Primary Actor: Administrator 
+Stakeholders and Interests: 
+Administrator: Wants to accurately update universities information (for instance: programs and courses) and wants to easily design or delete alerts related to specific university. 
+Students: Expects universities all data (programs and courses) and alerts accurately displayed for their life-making decisions. 
+Universities: Expects all their data is accurately rendered. Programs, courses and alerts are properly synchronized with the universities current data. 
+Teacher (Our project stakeholder): Wants all the features implemented correctly for this university update information and every feature is user-friendly. 
+ 
+Pre-Conditions:  
+	1	Administrator must be signed up with valid administrator ID and password. 
+	2	Universities Programs and courses must be available in the system and are accessible. 
+Post-Conditions: 
+	1	Update is made and saved successfully.  
+	2	Update is displayed successfully on the system. 
+ 
+Main Success Scenarios: 
+	1	Administrator logs in with special Administrator ID and password. 
+	2	Administrator navigates to the private administrator update info section. 
+	3	Administrator selects the university for which information needs to be updated. 
+	4	Administrator selects program, courses or alerts of the relevant university to get updated. 
+	5	Administrator adds, deletes, edits courses or programs as per requirements. 
+	6	Administrator designs alerts or delete outdated ones for specific university. 
+	7	Administrator submits the changes. 
+	8	System saves the changes. 
+	9	System confirms the information updated successfully in the form of message. 
+     10-Administrator views the updated changes on the system for assurance. 
+ 
+Alternatives: 
+*a. Any time system fails: 
+To support recovery and maintenance of the system, 
+	1	System signals an error message to the  administrator in case of any errors. 
+	2	System ensures all the draft changes are saved properly. 
+	3	System reconstructs prior state after the failure diminished. 
+2a- Invalid Login or password: 
+	1	System displays an error message and asks to try again. 
+3a- Success Notification fails: 
+	1	System includes a “View Updated Info” button where updated changes are displayed on the website and administrator checks manually if changes are made successfully or not. 
+4a- System slows down: 
+	1	System detects and notifies the administrator which explains the system is slowing down and gives two options of “wait “or “close” the application.  
+	2	If the user selects close, system saves the draft info and reconstructs prior state when user comes back. 
+	3	If user selects wait, system automatically improves its performance as soon as possible. 
+5a- Programs, courses or alerts rendering issues: 
+	1	System notifies the administrator of certain error and retries for synchronization between data-base(where update is made) and website (which is displayed). 
+6a- Database Update Failure: 
+	1	System notifies the error and asks the user to try again.  
+ 
+ 
+Special Requirements: 
+	1	Text must be visible from 1 meter. 
+	2	Robust Recovery must be assured when data fetching, updating data or rendering data errors occur.  
+	3	System must provide back-up of system’s data if system slows down or fails suddenly. 
+Technology and Data Variations list: 
+	1	Programs or courses descriptions or any other text written from keyboard or allowed the copy-paste text too. 
+	2	System allowed manually keyboard logins or saved user-Id and password click techniques. 
+Frequency Of Occurrence: 
+Could be Nearly Continuous. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
