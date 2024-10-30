@@ -1,0 +1,77 @@
+UC1:Fill and Submit Admission form.
+(Done by Tatheer Zahra)
+Primary Actor : Student
+Stakeholders and Interest:
+•	Student: 
+Wants easy, intuitive process for filling and submitting admission forms. Their focus is on minimizing errors and delays, ensuring their data is secure, and receiving confirmation of submission.
+•	Universities:
+Universities are interested in receiving accurate, complete, and well-organized applications from prospective students.
+•	Payment authorization service
+Ensuring that payments are processed quickly and securely within correct format and protocol and accurate tracking of transactions to avoid errors or fraud.
+Major Inputs:
+•	University name
+•	Program and degree level (for which admission is applied)
+•	Name
+•	Date of Birth
+•	Email address
+•	Contact number
+•	Adress
+•	Gender
+•	Nationality
+•	Last degree year attended
+•	Last degree percentage
+•	Last degree Transcript
+•	B-form/Identity card
+•	Emergency contact person’s name
+•	Emergency contact person’s contact number
+Major Output:
+•	Admission form
+•	Challan form
+•	Admission form submission confirmation message
+
+Preconditions: 
+•	The student has already signed up on the Campus Alert platform.
+•	The student has expressed interest in the university for which the admission form is to be filled.
+•	The admission form of the selected university is available.
+
+               
+Postconditions:
+•	The respected university received the admission application of the student with all the required credentials .
+•	An Email by the respected university  and a confirmation message on the screen from “Campus alert” platform  is received by the student that the admission form is successfully submitted to the selected university.
+Main success scenario:
+1.	The students navigate to the dashboard where their interested universities are registered.
+2.	The student selects the university and the specific program and degree level for which they wish to submit an admission form.
+3.	The platform provides the student with the admission form of the respected university where the student need to fill the  Personal Information section providing information : Name, Date of birth, Email, Phone , Address, Gender ,Nationality.
+4.	Then the student inputs Academic History information: Years attended last degree, Last degree percentage .
+5.	The student uploads Necessary Documents such as: Last degree transcript, Identity proof(B-form/ID card).
+6.	The student fills in the Emergency Contact Information section with details like: Emergency contact person, Emergency contact number.
+7.	The student would have to generate an online challan form for the admission fee, and it contains information such as the amount of fee required, the deadline for making the payment, and the bank details.
+8.	Student downloads and prints the challan form .
+         9.Upon payment of the fee, the student uploads a scanned     copy of the paid challan receipt in the appropriate section of the form.
+               10. After uploading the paid challan, the student Submit his/her admission application  to complete the process.
+               11. The system presents a submission message on the screen that his/her form and paid challan have successfully submitted.
+
+
+
+Alternatives:
+
+*a. At Any time, if system fails: To support recovery, ensure that every event can be recovered from any step of the scenario:
+         1-System immediately informs the user through an error  message on the Screen.
+          2- System asks the student to refresh the page.
+                  a. If the same error persists, the system asks the student to choose to remain in await state or close the software
+         3- System reconstructs prior state immediately after refreshing and starts the form filling process where it gets interrupted with all the filled entries information restored.
+
+11a. The form is failed to submit because some of the required entries are not filled.
+1.Student reviewed the  form for the unfilled required entries. 
+2.Then submit the form with all the required entries filled.
+
+
+Special Requirements:
+1.The format of entries like Date of birth, telephone number, Address etc. must be given.
+2.For online payment method, the credit authorization service must response within 30 sec 80% of the time.
+3.The must filled entries must be marked by *’ symbol .
+4.The important instructions regarding filling in the form must be mentioned above the application form.
+
+Frequency of occurrence:
+Quite frequent during fall/spring admission months of universities.
+
