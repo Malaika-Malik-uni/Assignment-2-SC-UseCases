@@ -1,0 +1,353 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2758
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 Helvetica-Bold;\f2\fswiss\fcharset0 ArialMT;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red14\green40\blue61;\red15\green54\blue78;
+}
+{\*\expandedcolortbl;;\csgray\c0;\cspthree\c10298\c20875\c29786;\cspthree\c12877\c27370\c37068;
+}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs42 \cf2 Use Case: Manage Programs (Delete)\
+
+\fs30 \cf3 Inputs:\
+
+\fs24 \cf2 Program name\
+Program ID\
+Specified University (To delete program)\
+
+\fs30 \cf3 Output:\
+
+\fs24 \cf2 1-Confirmation Messages.\
+2-System deletes program from the selected university.\
+
+\fs30 \cf3 Primary Actor:
+\fs24 \cf2  System Administrator\
+
+\fs30 \cf3 Stakeholders and Interest:\
+
+\f1\b\fs24 \cf2 1- Administrator:\
+
+\f0\b0 Wants to delete programs from the specified universities in the system accurately and\
+efficiently.\
+
+\f1\b 2-Universities:\
+
+\f0\b0 Wants to display programs of their universities correctly in the system and if the\
+program is removed from that university, they will want quick and accurate removal of\
+that program from system(website) too.\
+
+\f1\b 3-Teacher (Our project stakeholder):\
+
+\f0\b0 Wants all the features implemented correctly for this manage programs andevery feature is user-friendly.\
+
+\f1\b 4-Students:\
+
+\f0\b0 Wants correct information display about programs for their decision-making process.\
+
+\fs30 \cf3 Pre-conditions:\
+
+\fs24 \cf2 1.
+\f2  
+\f0 Administrator is logged in.\
+2.
+\f2  The \'93Delete Program\'94
+\f0  feature is already available on admin system interface.\
+
+\fs30 \cf3 Post-Conditions:\
+
+\fs24 \cf2 1.
+\f2  
+\f0 The specified program is deleted from the system.\
+
+\fs30 \cf3 Main Success Scenario:\
+
+\fs24 \cf2 1.
+\f2  
+\f0 The 
+\f2 Administrator navigates to the \'93Manage 
+\f0 Programs
+\f2 \'94 section.\
+
+\f0 2.
+\f2  
+\f0 The Administrator selects the specific university and view the list of programs in\
+it.\
+3.
+\f2  
+\f0 The Administrator selects the desired program.\
+4.
+\f2  
+\f0 System gives the option to delete the program.\
+5.
+\f2  
+\f0 The Administrator selects the option to delete.\
+6.
+\f2  
+\f0 System validates or confirms from Administrator to delete that program.\
+7.
+\f2  
+\f0 Administrator confirms the deletion.\
+8.
+\f2  
+\f0 System deletes that program from that university.\
+9.
+\f2  
+\f0 System displays a confirmation message that program is deleted successfully.\
+
+\fs30 \cf3 Alternative Flows:\
+
+\fs24 \cf2 *a. Any time system fails:\
+To support recovery and maintenance of the system,\
+1- System signals an error message to the administrator in case\
+of any errors.\
+2- System ensures all the draft changes are saved properly.\
+3- System reconstructs prior state after the failure diminished.8a- Deletion fails:\
+If the deletion fails, system must display message of something went wrong.\
+
+\fs30 \cf3 Special Requirements:\
+
+\fs24 \cf2 1- Text must be visible from 1 meter.\
+2- Robust Recovery must be assured when data fetching,\
+updating data or rendering data errors occur.\
+3- System must provide back-
+\f2 up of system\'92s data if system slows\
+
+\f0 down or fails suddenly.\
+
+\fs30 \cf3 Frequency Of Occurrence:\
+
+\fs24 \cf2 Could occur only if needed not frequently.\
+\
+\
+\
+\
+\
+\
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\fs56 Use Case: Manage Administrator Access\
+
+\fs40 \cf4 Inputs:\
+
+\fs32 \cf2 1-Full New Admin Name\
+2-New Admin Email Address\
+3-New Admin Unique Username ID\
+4-New Admin Password (Auto generated or manually entered)\
+
+\fs40 \cf4 Output:\
+
+\fs32 \cf2 1-Confirmation Messages.\
+2-Email sent to new Administrator with his/her login credentials.\
+
+\fs40 \cf4 Primary Actor:
+\fs32 \cf2  System Administrator\
+
+\fs40 \cf4 Stakeholders and Interest:\
+
+\fs32 \cf2 1-System Administrator:\
+Wants to manage administrator access fully privately, only those\
+new administrators which system administrator gives access can\
+manipulate and confirm changes in the system.2-Universities:\
+Wants a secure website and authorized administrators, who make\
+changes in the universities data accurately and efficiently.\
+3-Teacher (Our project stakeholder): Wants all the features\
+implemented correctly for this manage admin access and\
+every feature is user-friendly.\
+
+\fs40 \cf4 Pre-conditions:\
+
+\fs32 \cf2 1-System Administrator is logged in.\
+
+\fs40 \cf4 Post-Conditions:\
+
+\fs32 \cf2 1-Email is sent to new Administrator with login credentials\
+2-New administrator is added into the system.\
+
+\fs40 \cf4 Main Success Scenario:\
+
+\fs32 \cf2 1-System Administrator navigates to \'93Manage Admin Access\'94\
+section.\
+2- System Administrator selects the option of \'93Add new\
+Administrator\'943-System asks the system Administrator to fill in details of new\
+Administrator.\
+4-System Administrator submits the form.\
+5-System sends an email to the new Administrator with login\
+credentials.\
+6-System sends a confirmation message to the system\
+administrator that email is sent.\
+7-System stores unique Id and password in the system.\
+8-System updates the list of administrators in the system, adding\
+new Administrator.\
+9-System sends a confirmation message to the system\
+administrator that new admin is successfully added.\
+
+\fs40 \cf4 Alternative Flows:\
+
+\fs32 \cf2 *a. Any time system fails:\
+To support recovery and maintenance of the system,\
+1- System signals an error message to the administrator in case\
+of any errors.\
+2- System ensures all the draft changes are saved properly.\
+3- System reconstructs prior state after the failure diminished.3a- Invalid Email Address:\
+If the email format is incorrect and admin already existed, system\
+displays an error message to the Administrator.\
+5a- Email sending failure:\
+If the system fails to send email to new admin, it should display an\
+error message of something went wrong to system admin.\
+8a-New Admin adding errors:\
+If system fails to add the new admin into the system, it must display\
+an error message of something went wrong.\
+
+\fs40 \cf4 Special Requirements:\
+
+\fs32 \cf2 1- Text must be visible from 1 meter.\
+2- Robust Recovery must be assured when data fetching,\
+updating data or rendering data errors occur.\
+3- System must provide back-up of system\'92s data if system slows\
+down or fails suddenly.
+\fs40 \cf4 Technology and Data Variations list:\
+
+\fs32 \cf2 1- System allows manually keyboard passwords or also gives option\
+of automatic password generator.\
+
+\fs40 \cf4 Frequency Of Occurrence:\
+
+\fs32 \cf2 Could be Nearly Continuous.\
+\
+\
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\fs42 Use Case: Manage Universities (Add)\
+
+\fs30 \cf3 Inputs:\
+
+\fs24 \cf2 1.
+\f2  
+\f0 University Name\
+2.
+\f2  
+\f0 University ID\
+3.
+\f2  
+\f0 Location\
+4.
+\f2  
+\f0 Contact Info (Phone number or email)\
+5.
+\f2  
+\f0 Announcement Info (deadline, program)\
+6.
+\f2  
+\f0 Degree Name\
+7.
+\f2  
+\f0 Degree ID\
+
+\fs30 \cf3 Output:\
+
+\fs24 \cf2 1-Confirmation Messages.\
+2-System adds new university in the list.\
+
+\fs30 \cf3 Primary Actor:
+\fs24 \cf2  Administrator\
+
+\fs30 \cf3 Stakeholders and Interest:\
+
+\f1\b\fs24 \cf2 1- Administrator:\
+
+\f0\b0 Wants to add universities in the system accurately and efficiently.\
+
+\f1\b 2-Universities:\
+
+\f0\b0 Wants to display their universities correct information in the system.\
+
+\f1\b 3-Teacher (Our project stakeholder): 
+\f0\b0 Wants all the featuresimplemented correctly for this manage universities and\
+every feature is user-friendly.\
+
+\f1\b 4-Students:\
+
+\f0\b0 Wants correct information display about universities for their decision-making process.\
+
+\fs30 \cf3 Pre-conditions:\
+
+\fs24 \cf2 1.
+\f2  
+\f0 Administrator is logged in.\
+2.
+\f2  The \'93Add university\'94 feature is available on admin system interface.\
+
+\f0\fs30 \cf3 Post-Conditions:\
+
+\fs24 \cf2 1.
+\f2  
+\f0 The new university is added to the system.\
+2.
+\f2  
+\f0 Added university is visible to the students.\
+
+\fs30 \cf3 Main Success Scenario:\
+
+\fs24 \cf2 1.
+\f2  
+\f0 The 
+\f2 Administrator navigates to the \'93Manage Universities\'94 section.\
+
+\f0 2.
+\f2  The Administrator selects the \'93Add university\'94 option.\
+
+\f0 3.
+\f2  
+\f0 System asks the Administrator to fill in the details of university.\
+4.
+\f2  
+\f0 Administrator also adds the degree-levels of that university one-by-one.\
+5.
+\f2  
+\f0 Administrator also adds announcements related to specific degree level.\
+6.
+\f2  
+\f0 System validates the details when Administrator submits the details.\
+7.
+\f2  
+\f0 System adds a new university in pre-existing list after validation.\
+8.
+\f2  
+\f0 System sends a confirmation message to the Administrator of successfully\
+adding new university.\
+
+\fs30 \cf3 Alternative Flows:\
+
+\fs24 \cf2 *a. Any time system fails:\
+To support recovery and maintenance of the system,\
+1- System signals an error message to the administrator in case\
+of any errors.\
+2- System ensures all the draft changes are saved properly.3- System reconstructs prior state after the failure diminished.\
+4a- Invalid Details:\
+If the details are invalid or incomplete, system\
+displays an error message to the Administrator.\
+4b- Adding pre-existing university:\
+If the university entered is already present on the system, system displays an error\
+message to Administrator.\
+5a-New University adding errors:\
+If system fails to add the new university into the system, it must display\
+an error message of something went wrong.\
+
+\fs30 \cf3 Special Requirements:\
+
+\fs24 \cf2 1- Text must be visible from 1 meter.\
+2- Robust Recovery must be assured when data fetching,\
+updating data or rendering data errors occur.\
+3- System must provide back-
+\f2 up of system\'92s data if system slows\
+
+\f0 down or fails suddenly.\
+
+\fs30 \cf3 Frequency Of Occurrence:\
+
+\fs24 \cf2 Could occur only if needed not frequently.}
