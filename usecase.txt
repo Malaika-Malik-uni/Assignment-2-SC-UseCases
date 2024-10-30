@@ -1,0 +1,159 @@
+                         4. Usecases
+                                       Done by: Sehrish Siddique
+UC1. View Universities information
+
+Primary actor: 
+Student
+Stakeholders:
+Students: Expects all universities and their updated details to be displayed.
+Administration: Wants to run the website smoothly and add all the universities and their detailed information.
+Input:
+•	Selects university
+•	Selects degree level
+•	Selects programs
+
+Output:
+•	Displays university information
+•	Displays programs of university
+•	Displays courses being offered for that program
+
+Precondition:
+Website should be opened successfully.
+Postcondition:
+Details of universities admission is displayed to student.
+Main success scenario:
+1.	System displays the list of universities.
+2.	Student displays an option to search any university from search bar.
+3.	Student selects any specific university.
+4.	On selecting a university software displays university details i.e. overview of university, levels of academic degrees and their admission status and deadline.
+5.	On selecting any level of academic degrees software displays list of programs being offered in that degree level.
+6.	On selecting a program software displays courses being taught in that program.
+
+
+Alternative Flow:
+1a. If there is no list of universities
+1.	it should display a message of no university currently available.
+“Universities currently not available”.
+
+3a. there are not any specific details of university
+1.	a message should be displayed of details not available.
+“Universities details currently not available”.
+
+3b. If a student search for invalid university
+1.	It displays a message of invalid university.
+“Invalid university”.
+
+Frequency of usecase:
+This usecase is expected to be used by students frequently.
+
+Special Requirements:
+•	All universities details should be presentable.
+•	Language used should be simple and straight forward.
+•	University details should be accurate.
+
+
+UC2. Register Interest
+
+Primary actor: 
+Student
+Stakeholders:
+Students: Expects to receive alerts regarding interested university.
+Administration: Wants to keep student updated regarding interested university.
+Input:
+•	University name
+•	Programs names
+Output:
+•	Confirmation message
+
+Precondition:
+•	Student must have signed up.
+•	Student must have logged in.
+•	List of universities and programs must be displayed to student.
+Postcondition:
+•	Student have successfully registered interest.
+•	System is set to alert students for the deadlines and updates.
+Main success scenario:
+1.	System displays an option to register interest.
+2.	On selecting option, system shows a register interest form.
+3.	System displays input area to enter university name and select programs names.
+4.	Student enters university name and select programs names.
+5.	Student selects submit option.
+6.	Student processes and registers students interest.
+7.	System sends confirmation message
+
+Alternative Flow:
+1a. If student selects register interest option for a university whose programs are not available
+1.	a message should be displayed of details not available.
+“Cannot register now due to current unavailability of programs”.
+
+ 4a. If a student selects a particular program which is unavailable 
+1.	That program name cannot be selected.
+   6a. If a student registers interest of a university that has been already                   registered
+1.	System displays a message “This university has already been registered.”
+6b. a system error occurs
+1.	 System displays a message “System error!!”
+ 
+Frequency of usecase:
+This usecase is expected to be used by students frequently as interest have to be registered for multiple university.
+
+Special Requirements:
+•	In input area of university name, default and fixed university that has been opened should be displayed.
+•	Language used should be simple and straight forward.
+•	University programs should be accurate and updated.
+UC3. Sign up
+
+Primary actor: 
+Student
+Stakeholders:
+Students: wants access to register university
+Administration: Wants to run the website securely and ensures legal and registered users to register interest.
+Input:
+•	Username
+•	Email 
+•	Password 
+•	Confirm password
+
+Output:
+•	Confirmation email
+
+Precondition:
+Student already have not signed in.
+Postcondition:
+•	Students is successfully registered.
+•	Student is able to register interest.
+Main success scenario:
+1.	System displays an option of sign up.
+2.	Student selects the option of sign up.
+3.	System displays a sign up form.
+4.	System displays inputs areas of username, email, password, confirm password.
+5.	Students enters username, email, password and confirm password.
+6.	Student selects submit button.
+7.	System validates inputs.
+8.	System creates account and send verification email.
+9.	System sends confirmation email.
+
+Alternative Flow:
+    5a. Student uses already registered email
+1.	it should display a message 
+“This email has already been registered”.
+    5b. Student uses invalid email
+1.	it should display a message 
+“Invalid email. Please enter valid email.”.
+5c. student enters weak password
+1.	a message should be displayed 
+“Entered password is weak. Renter password”.
+
+ 5d. If a student enters wrong confirm password
+1.	It displays a message 
+“Passwords not matched. Try again”.
+7a. student leave an input field blank
+1.	System displays a message 
+“incomplete information!”.
+
+Frequency of usecase:
+This usecase is to be used by student only once.
+
+Special Requirements:
+•	All user data must be stored securely.
+•	Email should be verified.
+
